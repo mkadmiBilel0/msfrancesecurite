@@ -60,27 +60,13 @@
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
-        .logo-text {
-            font-weight: 900;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-            font-style: italic;
-            line-height: 1;
-        }
-
-        .logo-text span {
-            color: var(--primary-red);
-        }
-
-        .logo-subtext {
-            font-size: 0.65rem;
-            color: var(--text-gray);
-            letter-spacing: 2px;
-            display: block;
-            margin-top: 2px;
+        .logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
         }
 
         nav {
@@ -155,9 +141,9 @@
             padding-bottom: 60px;
             display: flex;
             align-items: center;
-            /* Image de fond libre de droit : Agent de sécurité professionnel */
-            background: linear-gradient(90deg, rgba(11,11,11,0.95) 0%, rgba(11,11,11,0.75) 50%, rgba(11,11,11,0.4) 100%),
-                        url('https://images.pexels.com/photos/8088489/pexels-photo-8088489.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+            /* Nouveau fond : Image générée d'agents en patrouille avec véhicule logoté */
+            background: linear-gradient(90deg, rgba(11,11,11,0.92) 0%, rgba(11,11,11,0.7) 50%, rgba(11,11,11,0.3) 100%),
+                        url('hero.jpg') center/cover no-repeat;
             padding-left: 8%;
             padding-right: 8%;
         }
@@ -321,7 +307,7 @@
 
         .service-overlay {
             position: relative;
-            height: 160px;
+            height: 180px;
             width: 100%;
         }
 
@@ -423,7 +409,7 @@
            ========================================== */
         .cta-banner {
             background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                        url('https://images.pexels.com/photos/7714752/pexels-photo-7714752.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop') center/cover;
             padding: 50px 8%;
             display: flex;
             justify-content: space-between;
@@ -530,7 +516,7 @@
         }
 
         /* ==========================================
-           RESPONSIVE MOBILE DESIGN (FIXES)
+           RESPONSIVE MOBILE DESIGN
            ========================================== */
         @media (max-width: 992px) {
             nav { display: none; }
@@ -627,10 +613,7 @@
     <!-- EN-TÊTE -->
     <header>
         <div class="logo-container">
-            <div>
-                <div class="logo-text">M.S <span>FRANCE</span></div>
-                <span class="logo-subtext">S É C U R I T É</span>
-            </div>
+            <img src="logo.jpg" alt="M.S France Sécurité Logo" class="logo-img">
         </div>
 
         <nav>
@@ -660,7 +643,7 @@
             <div class="hero-subtitle">M.S FRANCE SÉCURITÉ</div>
             <h1 class="hero-title">Votre Sécurité, <span>Notre Priorité</span></h1>
             <p class="hero-description">
-                Spécialiste de la sécurité privée, du gardiennage, de la sécurité incendie et de la vidéoprotection en France. Une expertise sur mesure à votre service.
+                Spécialiste de la mise à disposition d'agents de sécurité qualifiés, du gardiennage, de la sécurité incendie et de la vidéosurveillance auprès des entreprises.
             </p>
 
             <div class="hero-buttons">
@@ -702,7 +685,7 @@
         <div class="section-header">
             <div class="section-title-wrap">
                 <h2>Nos Services</h2>
-                <span class="section-subtitle">Des solutions adaptées à vos besoins</span>
+                <span class="section-subtitle">Des solutions sur mesure pour la protection de vos sites</span>
             </div>
             <a href="#" class="btn-secondary" style="font-size: 0.75rem;">Voir tous nos services <i class="fa-solid fa-arrow-right"></i></a>
         </div>
@@ -711,72 +694,72 @@
             <!-- Service 1 : Gardiennage -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/8088489/pexels-photo-8088489.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gardiennage">
+                    <img src="hero.jpg" alt="Agent de Sécurité en Tenue et véhicule">
                     <div class="service-icon-badge"><i class="fa-solid fa-user-shield"></i></div>
                 </div>
                 <div class="service-info">
                     <h3>Gardiennage</h3>
-                    <p>Surveillance humaine de vos sites 24h/24 et 7j/7 par des agents agréés et qualifiés.</p>
+                    <p>Mise à disposition d'agents de sécurité professionnels et agréés pour la surveillance de vos locaux professionnels.</p>
                 </div>
             </div>
 
             <!-- Service 2 : Vidéosurveillance -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vidéosurveillance">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=800&auto=format&fit=crop" alt="Caméra de Vidéosurveillance">
                     <div class="service-icon-badge"><i class="fa-solid fa-video"></i></div>
                 </div>
                 <div class="service-info">
                     <h3>Vidéosurveillance</h3>
-                    <p>Installation, gestion et télésurveillance par systèmes de vidéoprotection haut de gamme.</p>
+                    <p>Gestion et levée de doute à distance grâce à des systèmes de vidéoprotection et de télésurveillance performants.</p>
                 </div>
             </div>
 
-            <!-- Service 3 : Sécurité Incendie -->
+            <!-- Service 3 : Sécurité Incendie (Image de haute qualité SSIAP générée) -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/260367/pexels-photo-260367.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sécurité Incendie">
+                    <img src="securite_incendie.jpeg" alt="Agent de Sécurité Incendie SSIAP">
                     <div class="service-icon-badge"><i class="fa-solid fa-fire-extinguisher"></i></div>
                 </div>
                 <div class="service-info">
                     <h3>Sécurité Incendie</h3>
-                    <p>Agents certifiés SSIAP 1, 2 et 3 pour la prévention incendie en établissements ERP et IGH.</p>
+                    <p>Agents qualifiés SSIAP 1, 2 et 3 dédiés à la prévention incendie, au contrôle des équipements et à la sécurité ERP/IGH.</p>
                 </div>
             </div>
 
             <!-- Service 4 : Événementiel -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Événementiel">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="Sécurité Événementielle">
                     <div class="service-icon-badge"><i class="fa-solid fa-users"></i></div>
                 </div>
                 <div class="service-info">
                     <h3>Événementiel</h3>
-                    <p>Sécurisation et contrôle d'accès pour vos concerts, festivals, salons et rassemblements VIP.</p>
+                    <p>Sécurisation globale, gestion des accès et contrôle de foule lors de vos salons, congrès ou soirées d'entreprise.</p>
                 </div>
             </div>
 
-            <!-- Service 5 : Intervention (Image fonctionnelle) -->
+            <!-- Service 5 : Intervention -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/7714752/pexels-photo-7714752.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Intervention Rapide">
-                    <div class="service-icon-badge"><i class="fa-solid fa-car-on"></i></div>
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800&auto=format&fit=crop" alt="Véhicule de Patrouille et d'Intervention">
+                    <div class="service-icon-badge"><i class="fa-solid fa-car-on"></i></div>                    <div class="service-icon-badge"><i class="fa-solid fa-car-on"></i></div>
                 </div>
                 <div class="service-info">
                     <h3>Intervention</h3>
-                    <p>Rondes de nuit, levées de doute physiques et interventions d'urgence sur alarme 24/7.</p>
+                    <p>Rondes de patrouille motorisées, rondes de fermeture et intervention d'urgence 24h/24 et 7j/7.</p>
                 </div>
             </div>
 
-            <!-- Service 6 : Sûreté -->
+            <!-- Service 6 : Sûreté & Contrôle d'accès -->
             <div class="service-card">
                 <div class="service-overlay">
-                    <img src="https://images.pexels.com/photos/8088495/pexels-photo-8088495.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sûreté et Filtrage">
-                    <div class="service-icon-badge"><i class="fa-solid fa-walkie-talkie"></i></div>
+                    <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=800&auto=format&fit=crop" alt="Contrôle d'accès et enregistrement badge">
+                    <div class="service-icon-badge"><i class="fa-solid fa-id-card"></i></div>
                 </div>
                 <div class="service-info">
-                    <h3>Sûreté</h3>
-                    <p>Contrôle d'accès strict, filtrage, gestion des flux et accueil sécurisé des visiteurs.</p>
+                    <h3>Sûreté & Filtrage</h3>
+                    <p>Gestion des badges d'accès, registre des visiteurs, filtrage à l'accueil et audit de sécurité sur site.</p>
                 </div>
             </div>
         </div>
@@ -830,8 +813,8 @@
     <!-- BANNIÈRE D'APPEL À L'ACTION -->
     <section class="cta-banner" id="contact">
         <div>
-            <div class="cta-title">Besoin d'une entreprise de sécurité ?</div>
-            <div class="cta-sub">Contactez-nous dès aujourd'hui pour une étude personnalisée et un devis gratuit.</div>
+            <div class="cta-title">Besoin de louer des agents de sécurité ?</div>
+            <div class="cta-sub">Contactez-nous dès aujourd'hui pour une étude personnalisée et un devis rapide.</div>
         </div>
 
         <div class="cta-contacts">
