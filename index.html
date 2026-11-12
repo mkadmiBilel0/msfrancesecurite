@@ -34,7 +34,7 @@ nav a.active,nav a:hover{color:var(--primary-red)}
 .hs-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-color:#1a1a1a;transform:scale(1.02)}
 .hs-slide.active .hs-bg{animation:zoom 8s ease-out forwards}
 @keyframes zoom{to{transform:scale(1.12)}}
-.hs-slide::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,11,11,.92) 0%,rgba(11,11,11,.65) 50%,rgba(11,11,11,.2) 100%),linear-gradient(0deg,rgba(11,11,11,.95) 0%,transparent 40%)}
+.hs-slide::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,11,11,.8) 0%,rgba(11,11,11,.45) 50%,rgba(11,11,11,.1) 100%),linear-gradient(0deg,rgba(11,11,11,.95) 0%,transparent 40%)}
 .hs-content{position:relative;z-index:3;max-width:650px;opacity:0;transform:translateY(30px);transition:all .8s ease .3s}
 .hs-slide.active .hs-content{opacity:1;transform:none}
 .hero-subtitle{color:var(--primary-red);font-size:.9rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px}
@@ -169,7 +169,7 @@ header.header-hidden{transform:translateY(-100%)}
 <section class="hero-slider" id="heroSlider">
 
   <div class="hs-slide active">
-    <div class="hs-bg" style="background-image:url('slide-gardiennage.svg')"></div>
+    <div class="hs-bg" style="background-image:url('slide-gardiennage.jpg')"></div>
     <div class="hs-content">
       <div class="hero-subtitle">M.S FRANCE SÉCURITÉ</div>
       <h1 class="hero-title">Votre Sécurité, <span>Notre Priorité</span></h1>
@@ -182,7 +182,7 @@ header.header-hidden{transform:translateY(-100%)}
   </div>
 
   <div class="hs-slide">
-    <div class="hs-bg" style="background-image:url('slide-k9.svg')"></div>
+    <div class="hs-bg" style="background-image:url('slide-k9.jpg')"></div>
     <div class="hs-content">
       <div class="hero-subtitle">Équipe Cynophile</div>
       <h2 class="hero-title">Agents Maîtres-Chiens <span>Brigade K9</span></h2>
@@ -195,7 +195,7 @@ header.header-hidden{transform:translateY(-100%)}
   </div>
 
   <div class="hs-slide">
-    <div class="hs-bg" style="background-image:url('slide-evenement.svg')"></div>
+    <div class="hs-bg" style="background-image:url('slide-evenement.jpg')"></div>
     <div class="hs-content">
       <div class="hero-subtitle">Sécurité Événementielle</div>
       <h2 class="hero-title">Vos Événements <span>Protégés</span></h2>
@@ -381,5 +381,4 @@ header.header-hidden{transform:translateY(-100%)}
 })();
 </script>
 </body>
-
 </html>
